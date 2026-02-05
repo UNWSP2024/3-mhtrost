@@ -4,24 +4,18 @@
 # If the person is older than 1 year, but younger than 13 years, it should display "child".
 # If the person is at least 13 years old, but less than 20 years old, it should display "teenager".
 # If the person is at least 20 year old, it should display "adult".
-
-def categorize_age(age):
-    ageCategory = "TBD"
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
-
-
-    return ageCategory
-
+age = float(input("Enter the person's age: "))
 
 #### This piece of the code has been done for you,
 #### you only need to worry about the actual shipping 
 #### charge logic in the weight_conversion function
-if __name__ == '__main__':
-    # Local variables
-    # Get age from the user.
-    age = float(input("Enter the person's age: "))
-    # Display the age
-    ageBucket = categorize_age(age)
-    print (ageBucket)
+
+
+if age <= 1:
+    print('You are an infant')
+if age >= 2 and age <= 12:
+    print('You are a child')
+if age >= 13 and age <= 19:
+    print('You are a teenager')
+if age >= 20:
+    print('You are an adult')
