@@ -6,7 +6,6 @@
 # The program then displays the hot dog cost, tax and total cost. 
 
 
-# Prices
 HOT_DOG_PRICE = 3.50
 CHILI_DOG_PRICE = 4.50
 CHEESE_PRICE = 0.50
@@ -14,7 +13,6 @@ PEPPERS_PRICE = 0.75
 ONIONS_PRICE = 1.00
 TAX_RATE = 0.07
 
-# Get hot dog type
 print("Hot Dog Menu:")
 print("1. Hot Dog ($3.50)")
 print("2. Chili Dog ($4.50)")
@@ -29,7 +27,6 @@ else:
     print("Invalid choice.")
     exit()
 
-# Get toppings
 cheese = input("Add cheese for $0.50? (y/n): ")
 peppers = input("Add peppers for $0.75? (y/n): ")
 onions = input("Add grilled onions for $1.00? (y/n): ")
@@ -41,12 +38,10 @@ if peppers == "y":
 if onions == "y":
     subtotal += ONIONS_PRICE
 
-# Calculate tax and total
 tax = subtotal * TAX_RATE
 total = subtotal + tax
 
-# Display results
-print("\nOrder Summary")
+print("Order Summary")
 print(f"Hot dog cost: ${subtotal:.2f}")
 print(f"Tax: ${tax:.2f}")
 print(f"Total cost: ${total:.2f}")

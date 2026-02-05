@@ -5,21 +5,11 @@
 # If the person is at least 13 years old, but less than 20 years old, it should display "teenager".
 # If the person is at least 20 year old, it should display "adult".
 age = float(input("Enter the person's age: "))
-def categorize_age(age):
-    ageCategory = "Thinking..."
-
-    return ageCategory
-
 
 #### This piece of the code has been done for you,
 #### you only need to worry about the actual shipping 
 #### charge logic in the weight_conversion function
-if __name__ == '__main__':
-    # Local variables
-    # Get age from the user.
-    # Display the age
-    ageBucket = categorize_age(age)
-    print (ageBucket)
+
 
 if age <= 1:
     print('You are an infant')
